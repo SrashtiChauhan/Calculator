@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main class="calculator-container">
+      <section class="calculator" aria-labelledby="calculator-title">
+        <header class="calculator-header">
+          <h1 id="calculator-title">Calculator</h1>
+        </header>
+
+        <section class="calculator-display">
+          <output id="display" aria-live="polite">0</output>
+        </section>
+
+        <section class="calculator-buttons">
+          <!-- 1st row -->
+          <button type="button" class="btn action-btn" data-action="clear">
+            AC
+          </button>
+          <button type="button" class="btn action-btn" data-action="delete">
+            DEL
+          </button>
+          <button type="button" class="btn operator-btn" data-operator="/">
+            ÷
+          </button>
+          <button type="button" class="btn operator-btn" data-operator="*">
+            ×
+          </button>
+
+          <!-- 2nd row -->
+          <button type="button" class="btn number-btn" data-number="7">
+            7
+          </button>
+          <button type="button" class="btn number-btn" data-number="8">
+            8
+          </button>
+          <button type="button" class="btn number-btn" data-number="9">
+            9
+          </button>
+          <button type="button" class="btn operator-btn" data-operator="-">
+            −
+          </button>
+
+          <!-- 3rd row -->
+          <button type="button" class="btn number-btn" data-number="4">
+            4
+          </button>
+          <button type="button" class="btn number-btn" data-number="5">
+            5
+          </button>
+          <button type="button" class="btn number-btn" data-number="6">
+            6
+          </button>
+          <button type="button" class="btn operator-btn" data-operator="+">
+            +
+          </button>
+
+          <!-- 4th row -->
+          <button type="button" class="btn number-btn" data-number="1">
+            1
+          </button>
+          <button type="button" class="btn number-btn" data-number="2">
+            2
+          </button>
+          <button type="button" class="btn number-btn" data-number="3">
+            3
+          </button>
+          <button type="button" class="btn equal-btn" data-action="calculate">
+            =
+          </button>
+
+          <!-- 5th row -->
+          <button type="button" class="btn number-btn zero-btn" data-number="0">
+            0
+          </button>
+          <button type="button" class="btn number-btn" data-number=".">
+            .
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
